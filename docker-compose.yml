@@ -1,0 +1,8 @@
+services:
+  api:
+    build: ./app
+    container_name: libreria-onuba-api
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      - tokentimetolive=3600

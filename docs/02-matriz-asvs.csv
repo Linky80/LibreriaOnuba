@@ -1,0 +1,2 @@
+id_asvs;requisito;aplica;estado;evidencia;prioridad
+V2.1.1;"Ejemplo: las contraseñas tienen al menos 12 caracteres";si;no cumple;"El registro acepta contraseñas de 1 carácter";alta
