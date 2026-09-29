@@ -18,4 +18,7 @@ Semgrep, Bandit, OWASP ZAP… (informes en `evidencias/ud1/`).
 ## Pruebas
 Qué tests habéis escrito en `tests/`, qué comprueba cada uno y cuáles fallan (y por qué).
 
+###Documentar test
+![alt text](<../evidencias/ud1/Captura de pantalla 2026-09-29 205614.png>)
+
 ## Conclusiones
