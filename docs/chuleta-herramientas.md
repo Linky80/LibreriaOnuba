@@ -25,6 +25,24 @@ docker compose down
 
 Busca fallos en el código sin ejecutarlo. Rápido y sin tocar nada
 
+### Opción A · Instalarlo con pip (local)
+
+```bash
+# Instalar bandit
+pip install bandit
+
+# Escanear todo el proyecto
+bandit -r ./proyecto
+
+# Generar el informe en un archivo
+bandit -r ./proyecto -f html -o reporte.html
+
+# Filtrar por nivel de gravedad (solo High y Medium)
+bandit -r ./proyecto -lll
+```
+
+### Opción B · Docker (sin instalar nada)
+
 ```bash
 docker run --rm -v "$(pwd)/app:/app" ghcr.io/pycqa/bandit/bandit:latest -r /app
 ```
@@ -59,6 +77,12 @@ Prueba la app en marcha buscando vulnerabilidades
 6. Le damos atacar, y escanear la app esperamos a que termine
 7. Barra de herramientas Seleccionamos Informe --> Generar informe
 8. Ponemos la ruta que queramos y Generar Informe
+
+<!--no poner la imagen directamenete para poderla formatear en tamaño y centrarla al md-->
+<div align="center">
+    <img src="imgs/01-config-zap.png" alt="01-config-zap" width="600">
+</div>
+
 
 ### Opción B · Docker CLI (sin interfaz)
 
