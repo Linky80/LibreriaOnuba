@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP por Informe de Escaneo Checkmarx</title>
+<link
+	href="2026-10-06-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2026-10-06-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2026-10-06-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP por Informe de Escaneo Checkmarx</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2026-10-06-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on mar 6 oct 2026, at 17:00:35</span>
+		</p>
+		<p>ZAP Versión: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-3-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Alto</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(1)</span></a></li>
+							  
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(1)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://archive.mozilla.org</span></li>
+						<li><span class="site">http://localhost:5000</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Medio</span>, <span class="risk-level">Bajo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span>, <span class="confidence-level">Falso positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">Confirmado por Usuario</th>
+							<th scope="col">Alta</th>
+							<th scope="col">Media</th>
+							<th scope="col">Baja</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Bajo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40,0 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Medio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medio)</span> 
+							</th>
+							<th scope="col">
+								<span>Bajo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Bajo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost:5000</th>
+							
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Inyección SQL</a></th>
+							<td class="risk-level">Alto</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(120,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">El servidor filtra información de versión a través del campo &quot;Server&quot; del encabezado de respuesta HTTP</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Falta encabezado X-Content-Type-Options</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(120,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Petición de Autenticación Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Recuperado de la Caché</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Reason</th>
+						<th scope="col">Site</th>
+						<th scope="col">Description</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Warning</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP errors logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>8   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Warning</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP warnings logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>278   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Exceeded High</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>84 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>Percentage of network failures</div>
+						</td>
+						<td align="center">
+							<div>2 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>15 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/json</div>
+						</td>
+						<td align="center">
+							<div>36 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/problem+json</div>
+						</td>
+						<td align="center">
+							<div>63 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method DELETE</div>
+						</td>
+						<td align="center">
+							<div>4 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>36 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>13 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method PUT</div>
+						</td>
+						<td align="center">
+							<div>45 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://localhost:5000</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>22   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://archive.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://archive.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/x-xpinstall</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://archive.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://archive.mozilla.org</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>2   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://archive.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>66 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type font/woff2</div>
+						</td>
+						<td align="center">
+							<div>10 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/gif</div>
+						</td>
+						<td align="center">
+							<div>7 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/png</div>
+						</td>
+						<td align="center">
+							<div>17 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/svg+xml</div>
+						</td>
+						<td align="center">
+							<div>35 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>3 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/javascript</div>
+						</td>
+						<td align="center">
+							<div>25 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>28   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://assets-prod.sumo.prod.webservices.mozgcp.net</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>78 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://region1.google-analytics.com</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://region1.google-analytics.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/plain</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://region1.google-analytics.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://region1.google-analytics.com</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://region1.google-analytics.com</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>73 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>3 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>23 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/font-woff2</div>
+						</td>
+						<td align="center">
+							<div>7 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/javascript</div>
+						</td>
+						<td align="center">
+							<div>7 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/json</div>
+						</td>
+						<td align="center">
+							<div>15 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>7 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>30 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/javascript</div>
+						</td>
+						<td align="center">
+							<div>7 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>69 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>30 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>13   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://support.mozilla.org</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>61 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://www.googletagmanager.com</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://www.googletagmanager.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type application/javascript</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://www.googletagmanager.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://www.googletagmanager.com</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://www.googletagmanager.com</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				
+				
+				
+				
+				
+				
+				<li id="alerts--risk-3-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Alto</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Inyección SQL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000/users/v1/%27</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_SEQUENCE = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance">PCI_DSS</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_CICD = </span>
+				</li>
+				<li>
+					 <span>POLICY_DEV_CICD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">WSTG-v42-INPV-05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_API = </span>
+				</li>
+				<li>
+					 <span>POLICY_DEV_FULL = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance">HIPAA</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Inyección SQL puede ser posible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (284 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000/users/v1/%27 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+accept: application/json
+Bearer: ELTOKEN
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (196 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 500 INTERNAL SERVER ERROR
+Server: Werkzeug/2.2.3 Python/3.11.16
+Date: Sun, 04 Oct 2026 16:57:50 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 44886
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (44886 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=en&gt;
+  &lt;head&gt;
+    &lt;title&gt;sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unrecognized token: &quot;&#39;&#39;&#39;&quot;
+[SQL: SELECT * FROM users WHERE username = &#39;&#39;&#39;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+ // Werkzeug Debugger&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;?__debugger__=yes&amp;amp;cmd=resource&amp;amp;f=style.css&quot;&gt;
+    &lt;link rel=&quot;shortcut icon&quot;
+        href=&quot;?__debugger__=yes&amp;amp;cmd=resource&amp;amp;f=console.png&quot;&gt;
+    &lt;script src=&quot;?__debugger__=yes&amp;amp;cmd=resource&amp;amp;f=debugger.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = &quot;QfaugE2D0RxxQNfcibwS&quot;;
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body style=&quot;background-color: #fff&quot;&gt;
+    &lt;div class=&quot;debugger&quot;&gt;
+&lt;h1&gt;OperationalError&lt;/h1&gt;
+&lt;div class=&quot;detail&quot;&gt;
+  &lt;p class=&quot;errormsg&quot;&gt;sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unrecognized token: &amp;#34;&amp;#39;&amp;#39;&amp;#39;&amp;#34;
+[SQL: SELECT * FROM users WHERE username = &amp;#39;&amp;#39;&amp;#39;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 class=&quot;traceback&quot;&gt;Traceback &lt;em&gt;(most recent call last)&lt;/em&gt;&lt;/h2&gt;
+&lt;div class=&quot;traceback&quot;&gt;
+  &lt;h3&gt;&lt;/h3&gt;
+  &lt;ul&gt;&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473652556848&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1964&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_exec_single_context&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                            &lt;/span&gt;context,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                        &lt;/span&gt;):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                            &lt;/span&gt;evt_handled = True&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                            &lt;/span&gt;break&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;if not evt_handled:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;self.dialect.do_execute(
+&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                        &lt;/span&gt;cursor, str_statement, effective_parameters, context&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if self._has_events or self.engine._has_events:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;self.dispatch.after_cursor_execute(&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473652556992&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;747&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;do_execute&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def do_executemany(self, cursor, statement, parameters, context=None):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;cursor.executemany(statement, parameters)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def do_execute(self, cursor, statement, parameters, context=None):&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;cursor.execute(statement, parameters)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def do_execute_no_params(self, cursor, statement, context=None):&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;cursor.execute(statement)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def is_disconnect(self, e, connection, cursor):&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;exc-divider&quot;&gt;The above exception was the direct cause of the following exception:&lt;/div&gt;
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473659872464&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;2548&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;__call__&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def __call__(self, environ: dict, start_response: t.Callable) -&amp;gt; t.Any:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;The WSGI server calls the Flask application object as the&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;WSGI application. This calls :meth:`wsgi_app`, which can be&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;wrapped to apply middleware.&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.wsgi_app(environ, start_response)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653133024&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;2528&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wsgi_app&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;ctx.push()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.full_dispatch_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = e&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.handle_exception(e)
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;           ^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except:  # noqa: B001&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = sys.exc_info()[1]&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;raise&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return response(environ, start_response)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;finally:&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653133168&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;2525&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wsgi_app&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;ctx = self.request_context(environ)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;error: t.Optional[BaseException] = None&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;ctx.push()&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.full_dispatch_request()
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = e&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = self.handle_exception(e)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;except:  # noqa: B001&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = sys.exc_info()[1]&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653133312&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1822&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;full_dispatch_request&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request_started.send(self)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.preprocess_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if rv is None:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;rv = self.dispatch_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.handle_user_exception(e)
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.finalize_request(rv)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def finalize_request(&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;self,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;rv: t.Union[ft.ResponseReturnValue, HTTPException],&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653133456&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1820&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;full_dispatch_request&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request_started.send(self)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.preprocess_request()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if rv is None:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;rv = self.dispatch_request()
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;     ^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;except Exception as e:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;rv = self.handle_user_exception(e)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.finalize_request(rv)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def finalize_request(&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653133600&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1796&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;dispatch_request&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;and req.method == &amp;#34;OPTIONS&amp;#34;&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return self.make_default_options_response()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;# otherwise dispatch to the handler for that endpoint&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;view_args: t.Dict[str, t.Any] = req.view_args  # type: ignore[assignment]&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def full_dispatch_request(self) -&amp;gt; Response:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;Dispatches the request and on top of that performs request&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;pre and postprocessing as well as HTTP exception catching and&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;error handling.&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653133744&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/decorator.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;68&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wrapper&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;else:  # pragma: no cover&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;@functools.wraps(function)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;def wrapper(*args, **kwargs):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;request = self.api.get_request(*args, **kwargs)&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;response = function(request)
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;           ^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;return self.api.get_response(response, self.mimetype, request)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return wrapper&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653134320&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/uri_parsing.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;149&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wrapper&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;form = coerce_dict(request.form)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request.query = self.resolve_query(query)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request.path_params = self.resolve_path(path_params)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;request.form = self.resolve_form(form)&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;response = function(request)
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;           ^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return response&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return wrapper&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653136048&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/validation.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;399&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wrapper&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;for param in self.parameters.get(&amp;#39;formData&amp;#39;, []):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;error = self.validate_formdata_parameter(param[&amp;#34;name&amp;#34;], param, request)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;if error:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;raise BadRequestProblem(detail=error)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return function(request)
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;       ^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return wrapper&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653140368&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/parameter.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;120&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;wrapper&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;# attempt to provide the request context to the function&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;if pass_context_arg_name and (has_kwargs or pass_context_arg_name in arguments):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;kwargs[pass_context_arg_name] = request.context&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return function(**kwargs)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       ^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;return wrapper&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653141088&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/app/api_views/users.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;33&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;get_by_username&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source &quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;user = User.query.filter_by(username=resp[&amp;#39;sub&amp;#39;]).first()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;responseObject = {&amp;#39;status&amp;#39;: &amp;#39;success&amp;#39;, &amp;#39;data&amp;#39;: {&amp;#39;username&amp;#39;: user.username, &amp;#39;email&amp;#39;: user.email, &amp;#39;admin&amp;#39;: user.admin}}&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return Response(json.dumps(responseObject), 200, mimetype=&amp;#39;application/json&amp;#39;)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt;def get_by_username(username):&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;if User.get_user(username):
+&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;   ^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return Response(str(User.get_user(username)), 200, mimetype=&amp;#39;application/json&amp;#39;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return Response(error_message_helper(&amp;#39;User not found&amp;#39;), 404, mimetype=&amp;#39;application/json&amp;#39;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt;def register_user():&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653141520&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/app/models/user_model.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;62&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;get_user&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source &quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return [User.json_debug(user) for user in User.query.all()]&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;@staticmethod&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def get_user(username):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;user_query = f&amp;#34;SELECT * FROM users WHERE username = &amp;#39;{username}&amp;#39;&amp;#34;&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;query = db.session.execute(text(user_query))
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;ret = query.fetchone()&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;if ret:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;fin_query = &amp;#39;{&amp;#34;username&amp;#34;: &amp;#34;%s&amp;#34;, &amp;#34;email&amp;#34;: &amp;#34;%s&amp;#34;}&amp;#39; % (ret[1], ret[3])&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;fin_query = None&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653141952&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;709&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;execute&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;  # noqa: E501&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self._proxied.execute(
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;statement,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;params=params,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;execution_options=execution_options,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;bind_arguments=bind_arguments,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;_parent_execute_state=_parent_execute_state,&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653144256&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;2229&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;execute&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;:return: a :class:`_engine.Result` object.&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return self._execute_internal(
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;       &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;statement,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;params,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;execution_options=execution_options,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;bind_arguments=bind_arguments,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;_parent_execute_state=_parent_execute_state,&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653473920&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;2133&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_execute_internal&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;execution_options,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;bind_arguments,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;conn,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;result = conn.execute(
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;         &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;statement, params or {}, execution_options=execution_options&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;if _scalar_result:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return result.scalar()&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653478240&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1414&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;execute&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;try:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;meth = statement._execute_on_connection&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;except AttributeError as err:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;raise exc.ObjectNotExecutableError(statement) from err&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return meth(
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;       &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;self,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;distilled_parameters,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;execution_options or NO_OPTIONS,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653484720&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;489&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_execute_on_connection&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;execution_options: CoreExecuteOptionsParameter,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;) -&amp;gt; Result[Any]:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;if self.supports_execution:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if TYPE_CHECKING:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;assert isinstance(self, Executable)&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return connection._execute_clauseelement(
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;       &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;self, distilled_params, execution_options&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;raise exc.ObjectNotExecutableError(self)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653488032&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1638&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_execute_clauseelement&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;column_keys=keys,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;for_executemany=for_executemany,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;schema_translate_map=schema_translate_map,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;linting=self.dialect.compiler_linting | compiler.WARN_LINTING,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;ret = self._execute_context(
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;      &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;dialect,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;dialect.execution_ctx_cls._init_compiled,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;compiled_sql,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;distilled_parameters,&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;execution_options,&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653487888&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1842&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_execute_context&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return self._exec_insertmany_context(&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;dialect,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;context,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;return self._exec_single_context(
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;       &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;dialect, context, statement, parameters&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def _exec_single_context(&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;self,&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653488176&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1983&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_exec_single_context&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;context.post_exec()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;result = context._setup_result_proxy()&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;except BaseException as e:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;self._handle_dbapi_exception(
+&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;e, str_statement, effective_parameters, cursor, context&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;return result&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653488320&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;2325&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_handle_dbapi_exception&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if newraise:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;raise newraise.with_traceback(exc_info[2]) from e&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;elif should_wrap:&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;assert sqlalchemy_exception is not None&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;else:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;assert exc_info[1] is not None&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;raise exc_info[1].with_traceback(exc_info[2])&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;finally:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;del self._reentrant_error&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653488464&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;1964&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;_exec_single_context&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                            &lt;/span&gt;context,&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                        &lt;/span&gt;):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                            &lt;/span&gt;evt_handled = True&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                            &lt;/span&gt;break&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;if not evt_handled:&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;self.dialect.do_execute(
+&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                        &lt;/span&gt;cursor, str_statement, effective_parameters, context&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                    &lt;/span&gt;)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;            &lt;/span&gt;if self._has_events or self.engine._has_events:&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;                &lt;/span&gt;self.dispatch.after_cursor_execute(&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;li&gt;&lt;div class=&quot;frame&quot; id=&quot;frame-281473653488608&quot;&gt;
+  &lt;h4&gt;File &lt;cite class=&quot;filename&quot;&gt;&quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py&quot;&lt;/cite&gt;,
+      line &lt;em class=&quot;line&quot;&gt;747&lt;/em&gt;,
+      in &lt;code class=&quot;function&quot;&gt;do_execute&lt;/code&gt;&lt;/h4&gt;
+  &lt;div class=&quot;source library&quot;&gt;&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def do_executemany(self, cursor, statement, parameters, context=None):&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;cursor.executemany(statement, parameters)&lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line before&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def do_execute(self, cursor, statement, parameters, context=None):&lt;/pre&gt;
+&lt;pre class=&quot;line current&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;cursor.execute(statement, parameters)
+&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def do_execute_no_params(self, cursor, statement, context=None):&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;        &lt;/span&gt;cursor.execute(statement)&lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;&lt;/span&gt; &lt;/pre&gt;
+&lt;pre class=&quot;line after&quot;&gt;&lt;span class=&quot;ws&quot;&gt;    &lt;/span&gt;def is_disconnect(self, e, connection, cursor):&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/ul&gt;
+  &lt;blockquote&gt;sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unrecognized token: &amp;#34;&amp;#39;&amp;#39;&amp;#39;&amp;#34;
+[SQL: SELECT * FROM users WHERE username = &amp;#39;&amp;#39;&amp;#39;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+&lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;plain&quot;&gt;
+    &lt;p&gt;
+      This is the Copy/Paste friendly version of the traceback.
+    &lt;/p&gt;
+    &lt;textarea cols=&quot;50&quot; rows=&quot;10&quot; name=&quot;code&quot; readonly&gt;Traceback (most recent call last):
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py&amp;#34;, line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: unrecognized token: &amp;#34;&amp;#39;&amp;#39;&amp;#39;&amp;#34;
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/flask/app.py&amp;#34;, line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/flask/app.py&amp;#34;, line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/flask/app.py&amp;#34;, line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/flask/app.py&amp;#34;, line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/flask/app.py&amp;#34;, line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/flask/app.py&amp;#34;, line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/connexion/decorators/decorator.py&amp;#34;, line 68, in wrapper
+    response = function(request)
+               ^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/connexion/decorators/uri_parsing.py&amp;#34;, line 149, in wrapper
+    response = function(request)
+               ^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/connexion/decorators/validation.py&amp;#34;, line 399, in wrapper
+    return function(request)
+           ^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/connexion/decorators/parameter.py&amp;#34;, line 120, in wrapper
+    return function(**kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/app/api_views/users.py&amp;#34;, line 33, in get_by_username
+    if User.get_user(username):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/app/models/user_model.py&amp;#34;, line 62, in get_user
+    query = db.session.execute(text(user_query))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py&amp;#34;, line 709, in execute
+    return self._proxied.execute(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py&amp;#34;, line 2229, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py&amp;#34;, line 2133, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 1414, in execute
+    return meth(
+           ^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py&amp;#34;, line 489, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&amp;#34;, line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File &amp;#34;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py&amp;#34;, line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unrecognized token: &amp;#34;&amp;#39;&amp;#39;&amp;#39;&amp;#34;
+[SQL: SELECT * FROM users WHERE username = &amp;#39;&amp;#39;&amp;#39;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;explanation&quot;&gt;
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  &lt;span class=&quot;nojavascript&quot;&gt;
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.&lt;/span&gt;
+&lt;/div&gt;
+      &lt;div class=&quot;footer&quot;&gt;
+        Brought to you by &lt;strong class=&quot;arthur&quot;&gt;DON&#39;T PANIC&lt;/strong&gt;, your
+        friendly Werkzeug powered traceback interpreter.
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;pin-prompt&quot;&gt;
+      &lt;div class=&quot;inner&quot;&gt;
+        &lt;h3&gt;Console Locked&lt;/h3&gt;
+        &lt;p&gt;
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        &lt;form&gt;
+          &lt;p&gt;PIN:
+            &lt;input type=text name=pin size=14&gt;
+            &lt;input type=submit name=btn value=&quot;Confirm Pin&quot;&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--
+
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py&quot;, line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: unrecognized token: &quot;&#39;&#39;&#39;&quot;
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;, line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;, line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;, line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;, line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;, line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/flask/app.py&quot;, line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/decorator.py&quot;, line 68, in wrapper
+    response = function(request)
+               ^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/uri_parsing.py&quot;, line 149, in wrapper
+    response = function(request)
+               ^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/validation.py&quot;, line 399, in wrapper
+    return function(request)
+           ^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/connexion/decorators/parameter.py&quot;, line 120, in wrapper
+    return function(**kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File &quot;/app/api_views/users.py&quot;, line 33, in get_by_username
+    if User.get_user(username):
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/app/models/user_model.py&quot;, line 62, in get_user
+    query = db.session.execute(text(user_query))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py&quot;, line 709, in execute
+    return self._proxied.execute(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py&quot;, line 2229, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py&quot;, line 2133, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 1414, in execute
+    return meth(
+           ^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py&quot;, line 489, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 1842, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 2325, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py&quot;, line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py&quot;, line 747, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unrecognized token: &quot;&#39;&#39;&#39;&quot;
+[SQL: SELECT * FROM users WHERE username = &#39;&#39;&#39;]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+
+--&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>«username»</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>&#39;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 500 INTERNAL SERVER ERROR</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>No confíe en los datos de entrada del lado del cliente, incluso si existe una validación del lado del cliente.</p>
+
+<p>Como norma general, escriba la verificación de los datos en el lado del servidor.</p>
+
+<p>Si la aplicación usa JDBC, use PreparedStatement o CallableStatement, con parámetros pasados ​​por &#39;?&#39;</p>
+
+<p>Si la aplicación usa ASP, use objetos de comando ADO con verificación de tipo fuerte y consultas parametrizadas.</p>
+
+<p>Si se pueden usar los procedimientos almacenados de la base de datos, utilícelos.</p>
+
+<p>¡*No* concatene cadenas en consultas en el procedimiento almacenado, o use &#39;exec&#39;, &#39;exex immediate&#39; o una función equivalente!</p>
+
+<p>No cree consultas SQL dinámicas mediante la concatenación de cadenas simples.</p>
+
+<p>Escape todos los datos recibidos del cliente.</p>
+
+<p>Aplique una &#39;lista de permitidos&#39; para caracteres permitidos o una &#39;lista de denegados&#39; para caracteres no permitidos en la entrada del usuario.</p>
+
+<p>Aplique el principio de privilegio mínimo utilizando el usuario de base de datos con el menor privilegio posible.</p>
+
+<p>En particular, evite utilizar usuarios de bases de datos &#39;sa&#39; o &#39;db-owner&#39;. Esto no elimina la inyección SQL, pero minimiza su impacto.</p>
+
+<p>Otorgue el acceso mínimo a la base de datos que sea necesario para la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">El servidor filtra información de versión a través del campo &quot;Server&quot; del encabezado de respuesta HTTP</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor web/aplicación está filtrando información de versión a través de la cabecera de respuesta HTTP &quot;Server&quot;. El acceso a dicha información puede facilitar a los atacantes la identificación de otras vulnerabilidades a las que está sujeto su servidor web/aplicación.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (258 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+Accept: application/json,*/*
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (166 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/2.2.3 Python/3.11.16
+Date: Sun, 04 Oct 2026 16:39:01 GMT
+Content-Type: application/json
+Content-Length: 53
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (53 bytes)</summary>
+				
+				<pre><code>{ &quot;message&quot;: &quot;Libreria Onuba API&quot;, &quot;version&quot;: &quot;1.0&quot; }</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Werkzeug/2.2.3 Python/3.11.16</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. está configurado para suprimir la cabecera &quot;Server&quot; o proporcionar detalles genéricos.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Falta encabezado X-Content-Type-Options</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost:5000</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La cabecera Anti-MIME-Sniffing X-Content-Type-Options no se ha establecido en &#39;nosniff&#39;. Esto permite que las versiones anteriores de Internet Explorer y Chrome realicen MIME-sniffing en el cuerpo de la respuesta, lo que puede provocar que el cuerpo dé la respuesta se interprete y se muestre como un tipo de contenido distinto del tipo de contenido declarado. Las versiones actuales (principios de 2014) y heredadas de Firefox utilizarán el tipo de contenido declarado (si se establece uno), en lugar de realizar MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Este problema aún se aplica a las páginas de tipo error (401, 403, 500, etc.), ya que esas páginas a menudo se ven afectadas por problemas de inyección, en cuyo caso aún existe la preocupación de que los navegadores husmeen las páginas lejos de su tipo de contenido real.</p>
+
+<p>En el umbral «Alto» esta regla de análisis no alertará sobre respuestas de error del cliente o servidor.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (258 bytes)</summary>
+				
+				<pre><code>GET http://localhost:5000 HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+Accept: application/json,*/*
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (166 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/2.2.3 Python/3.11.16
+Date: Sun, 04 Oct 2026 16:39:01 GMT
+Content-Type: application/json
+Content-Length: 53
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (53 bytes)</summary>
+				
+				<pre><code>{ &quot;message&quot;: &quot;Libreria Onuba API&quot;, &quot;version&quot;: &quot;1.0&quot; }</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que la aplicación/servidor web establece el encabezado Content-Type adecuadamente, y que establece el encabezado X-Content-Type-Options a &#39;nosniff&#39; para todas las páginas web.</p>
+
+<p>Si es posible, asegúrese de que el usuario final utiliza un navegador web moderno y compatible con los estándares que no realiza MIME-sniffing en absoluto, o que puede ser dirigido por la aplicación web/servidor web para que no realice MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Petición de Autenticación Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost:5000/users/v1/login</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La petición en cuestión se ha identificado como una petición de autenticación. El campo &quot;Otra información&quot; contiene un conjunto de líneas key=vvalue que identifican cualquier campo relevante. Si la solicitud está en un contexto que tiene un método de autenticación configurado como &quot;Detección automática&quot;, esta regla cambiará la autenticación para que coincida con la petición identificada.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=username</p>
+
+<p>userValue=name1</p>
+
+<p>passwordParam=password</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (322 bytes)</summary>
+				
+				<pre><code>POST http://localhost:5000/users/v1/login HTTP/1.1
+host: localhost:5000
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+accept: application/json
+content-type: application/json
+content-length: 37
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (37 bytes)</summary>
+				
+				<pre><code>{&quot;username&quot;:&quot;name1&quot;,&quot;password&quot;:&quot;ZAP&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (166 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/2.2.3 Python/3.11.16
+Date: Sun, 04 Oct 2026 16:49:11 GMT
+Content-Type: application/json
+Content-Length: 81
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (81 bytes)</summary>
+				
+				<pre><code>{ &quot;status&quot;: &quot;fail&quot;, &quot;message&quot;: &quot;Password is not correct for the given username.&quot;}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>username</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Inyección SQL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40018/">Inyección SQL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/89.html">89</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>19</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>El servidor filtra información de versión a través del campo &quot;Server&quot; del encabezado de respuesta HTTP</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">Cabecera de Respuesta del Servidor HTTP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Falta encabezado X-Content-Type-Options</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">Falta encabezado X-Content-Type-Options</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Petición de Autenticación Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Petición de Autenticación Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Recuperado de la Caché</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10050/">Recuperado de la Caché</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a></li>
+										<li><a
+											href="https://www.rfc-editor.org/rfc/rfc9110.html">https://www.rfc-editor.org/rfc/rfc9110.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
