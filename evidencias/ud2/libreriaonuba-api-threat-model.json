@@ -1,0 +1,874 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "libreriaonuba-api",
+    "owner": "José Angel Lara",
+    "description": "Modelo de amenazas generado a partir del informe de Docker Scout de libreriaonuba-api:latest (1 crítica, 15 altas, 21 medias, 3 bajas).",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Flujo principal de la API",
+        "diagramType": "STRIDE",
+        "placeholder": "Nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [
+          {
+            "position": {
+              "x": 300,
+              "y": 80
+            },
+            "size": {
+              "width": 600,
+              "height": 460
+            },
+            "attrs": {
+              "text": {
+                "text": "Host Docker"
+              },
+              "body": {
+                "strokeWidth": 2.5,
+                "strokeDasharray": "10",
+                "stroke": "#333333"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": 0,
+            "id": "b299e08e-545e-441e-bb01-cd9f786ad21e",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Host Docker",
+              "description": "Límite de confianza entre internet y el entorno de ejecución.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "containedElements": [
+                "91ec693a-e93d-4360-9122-8584196cee6d",
+                "2d3d29c7-6137-436b-acbb-cd6d123a1ebc",
+                "9f49dcfc-f16c-4163-87bb-bf16316ac54a"
+              ],
+              "crossingFlows": [
+                "5c387409-42b8-4756-b8cc-91e576d8bbd2"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 40,
+              "y": 230
+            },
+            "size": {
+              "width": 160,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Cliente (navegador / app)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "bd1c6413-f752-436d-b80a-683d4b2963b7"
+                },
+                {
+                  "group": "right",
+                  "id": "52a3290c-e07c-46a6-ba1f-3aa92c2a2b3d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e8699dda-4867-451b-9e27-1ad25c1faa02"
+                },
+                {
+                  "group": "left",
+                  "id": "b72603a7-692b-4f48-9338-d36ae9d7d6f1"
+                }
+              ]
+            },
+            "id": "a0704c8f-abe1-4df7-a8ff-327f438950e8",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Cliente (navegador / app)",
+              "description": "Usuario que consume la API con un JWT.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isTrustBoundary": false,
+              "threats": [],
+              "providesAuthentication": false
+            }
+          },
+          {
+            "position": {
+              "x": 360,
+              "y": 160
+            },
+            "size": {
+              "width": 180,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "API Flask (libreriaonuba-api)"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4aa3e33d-1adf-40b9-a43f-7f13c2a9b10d"
+                },
+                {
+                  "group": "right",
+                  "id": "21e4caf8-eaa0-4c39-8be7-2c835ed4e284"
+                },
+                {
+                  "group": "bottom",
+                  "id": "8349d53a-a6b6-4170-ad26-4dc8d4b3e711"
+                },
+                {
+                  "group": "left",
+                  "id": "2c5001bf-b544-48e8-a0ff-bb01a6b3d3cd"
+                }
+              ]
+            },
+            "id": "91ec693a-e93d-4360-9122-8584196cee6d",
+            "data": {
+              "type": "tm.Process",
+              "name": "API Flask (libreriaonuba-api)",
+              "description": "Contenedor libreriaonuba-api:latest (linux/arm64, 66 MB, 115 paquetes). Flask + PyJWT.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isTrustBoundary": false,
+              "threats": [
+                {
+                  "id": "b56faaa3-7b4e-4518-86e0-b3ad4b751a6e",
+                  "title": "PyJWT: falsificación de firma JWT (CVE-2026-102268, crítica)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "pyjwt 2.6.0 (crítica en el informe de Docker Scout). Verificación de firma incorrecta: un atacante que conozca la clave pública puede forjar tokens HS256 si la lista de algoritmos mezcla HMAC y asimétricos.\n- CVE-2026-102268 (critical, CVSS 9.1, EPSS 0.196% / 8th percentile): Improper Verification of Cryptographic Signature. Corregido en 2.14.0.",
+                  "mitigation": "Actualizar pyjwt a >= 2.15.0 (mínimo 2.14.0 para este CVE). Usar una única familia de algoritmos en jwt.decode y no mezclar HS* con RS*/ES*.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "6cff749d-c42c-45ae-91de-6680b542f1a5",
+                  "title": "PyJWT: omisión de verificación de autenticidad/autenticación en tokens",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Varias vulnerabilidades de pyjwt 2.6.0 permiten aceptar tokens que deberían rechazarse (cabecera crit, confusión de algoritmos con JWK, etc.).\n- CVE-2026-32597 (high, CVSS 7.5, EPSS 0.282% / 19th percentile): Insufficient Verification of Data Authenticity. Corregido en 2.12.0.\n- CVE-2026-48526 (high, CVSS 7.4, EPSS 0.427% / 35th percentile): Improper Authentication. Corregido en 2.13.0.\n- CVE-2026-102271 (high, CVSS 7.4, EPSS 0.175% / 6th percentile): Improper Verification of Cryptographic Signature. Corregido en 2.14.0.\n- CVE-2025-45768 (high, CVSS 7.0, EPSS 0.168% / 6th percentile): sin título en el informe. Corregido en .\n- CVE-2026-102275 (medium, CVSS 6.5, EPSS 0.137% / 3rd percentile): Insufficient Verification of Data Authenticity. Corregido en 2.15.0.\n- CVE-2026-102269 (medium, CVSS 4.8, EPSS 0.198% / 9th percentile): Incorrect Behavior Order: Validate Before Canonicalize. Corregido en 2.14.0.\n- CVE-2026-48522 (medium, CVSS 4.2, EPSS 0.220% / 11th percentile): Unintended Proxy or Intermediary ('Confused Deputy'). Corregido en 2.13.0.",
+                  "mitigation": "Actualizar pyjwt a >= 2.15.0. Fijar algorithms=[...] con un solo algoritmo y validar claims (exp, aud, iss).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "c1d0aaef-84b1-420e-8391-4cec74e792d3",
+                  "title": "PyJWT: exposición de información sensible (CVE-2026-102267)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposición de información sensible a un actor no autorizado en pyjwt 2.6.0.\n- CVE-2026-102267 (high, CVSS 7.4, EPSS 0.157% / 4th percentile): Exposure of Sensitive Information to an Unauthorized Actor. Corregido en 2.14.0.",
+                  "mitigation": "Actualizar pyjwt a >= 2.15.0 y no incluir datos sensibles en el payload del JWT.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "92c892c9-1b42-4ea0-8c26-604210adf40d",
+                  "title": "PyJWT: denegación de servicio y fallos de robustez",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Consumo de recursos sin límite, expresiones regulares ineficientes y excepciones no controladas en pyjwt.\n- CVE-2026-101918 (medium, CVSS 5.3, EPSS 0.291% / 20th percentile): Uncaught Exception. Corregido en 2.15.0.\n- CVE-2026-101917 (medium, CVSS 5.3, EPSS 0.354% / 27th percentile): Allocation of Resources Without Limits or Throttling. Corregido en 2.14.0.\n- CVE-2026-102270 (medium, CVSS 4.4, EPSS 0.192% / 8th percentile): Inefficient Regular Expression Complexity. Corregido en 2.14.0.\n- CVE-2026-48524 (low, CVSS 3.7, EPSS 0.321% / 23rd percentile): Improper Cleanup on Thrown Exception. Corregido en 2.13.0.",
+                  "mitigation": "Actualizar pyjwt a >= 2.15.0. Limitar el tamaño de cabeceras/tokens en el proxy inverso o en la API.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "11ddc6ac-cc5f-4595-87b3-d0f01004e4d7",
+                  "title": "Werkzeug: ejecución/abuso del depurador por CSRF (CVE-2024-34069)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "werkzeug 2.2.3. Es el CVE con mayor EPSS del informe (percentil 88), por lo que es el más probable de ser explotado.\n- CVE-2024-34069 (high, CVSS 7.5, EPSS 3.397% / 88th percentile): Cross-Site Request Forgery (CSRF). Corregido en 3.0.3.",
+                  "mitigation": "Actualizar werkzeug a >= 3.1.9. Nunca ejecutar con debug=True en producción ni exponer el depurador.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "400fc0c7-3293-4bf1-bdd3-02f44e491402",
+                  "title": "Werkzeug: consumo descontrolado de recursos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Cargas de formularios/multipart que agotan CPU o memoria.\n- CVE-2024-49767 (medium, CVSS 6.9, EPSS 1.095% / 64th percentile): Uncontrolled Resource Consumption. Corregido en 3.0.6.\n- CVE-2023-46136 (medium, CVSS 5.7, EPSS 1.072% / 64th percentile): Uncontrolled Resource Consumption. Corregido en 2.3.8.",
+                  "mitigation": "Actualizar werkzeug a >= 3.1.9. Configurar MAX_CONTENT_LENGTH y MAX_FORM_MEMORY_SIZE.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "d13ed0dc-9d8f-4cbd-8e63-c9ecf92a0f9d",
+                  "title": "Werkzeug: path traversal y nombres de dispositivo de Windows",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Acceso a rutas fuera del directorio previsto (send_from_directory/safe_join). Los cuatro CVE de nombres de dispositivo de Windows afectan solo a hosts Windows; la imagen es linux/arm64, así que probablemente no son explotables aquí.\n- CVE-2024-49766 (medium, CVSS 6.3, EPSS 0.776% / 54th percentile): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'). Corregido en 3.0.6.\n- CVE-2026-27199 (medium, CVSS 6.3, EPSS 0.543% / 44th percentile): Improper Handling of Windows Device Names. Corregido en 3.1.6.\n- CVE-2026-21860 (medium, CVSS 6.3, EPSS 0.475% / 39th percentile): Improper Handling of Windows Device Names. Corregido en 3.1.5.\n- CVE-2026-102598 (medium, CVSS 6.3, EPSS 0.368% / 29th percentile): Improper Handling of Windows Device Names. Corregido en 3.1.9.\n- CVE-2025-66221 (medium, CVSS 6.3, EPSS 0.511% / 42nd percentile): Improper Handling of Windows Device Names. Corregido en 3.1.4.",
+                  "mitigation": "Actualizar werkzeug a >= 3.1.9. No servir ficheros a partir de rutas controladas por el usuario.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "6e0cc0bb-b1ce-4311-b1d2-47d713cf78b2",
+                  "title": "Flask: cookie de sesión persistente y caché con datos sensibles",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "flask 2.2.2.\n- CVE-2023-30861 (high, CVSS 8.7, EPSS 1.261% / 69th percentile): Use of Persistent Cookies Containing Sensitive Information. Corregido en 2.2.5.\n- CVE-2026-27205 (low, CVSS 2.3, EPSS 0.423% / 34th percentile): Use of Cache Containing Sensitive Information. Corregido en 3.1.3.",
+                  "mitigation": "Actualizar flask a >= 3.1.3 (revisar compatibilidad con Connexion y werkzeug 3). Añadir cabecera Vary: Cookie y cookies Secure/HttpOnly/SameSite.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "6f859d8d-e2d3-4a94-a48d-405f060b4f62",
+                  "title": "urllib3: certificados mal validados",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "urllib3 2.7.0: validación incorrecta de certificados en conexiones salientes (suplantación del servidor al que llama la API).\n- CVE-2026-97687 (high, CVSS 7.6, EPSS 0.242% / 14th percentile): Improper Certificate Validation. Corregido en 2.8.0.",
+                  "mitigation": "Actualizar urllib3 a >= 2.8.0 y mantener verify=True en las llamadas salientes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "c6407fda-f520-4fec-aa9e-71e9b23594f0",
+                  "title": "urllib3: asignación de recursos sin límite y bucle infinito",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "urllib3 2.7.0.\n- CVE-2026-97689 (high, CVSS 8.9, EPSS 0.292% / 20th percentile): Allocation of Resources Without Limits or Throttling. Corregido en 2.8.0.\n- CVE-2026-97688 (medium, CVSS 6.9, EPSS 0.291% / 20th percentile): Loop with Unreachable Exit Condition ('Infinite Loop'). Corregido en 2.8.0.",
+                  "mitigation": "Actualizar urllib3 a >= 2.8.0. Establecer timeouts y límites de tamaño en las respuestas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "1cd6fa19-17a3-4447-8178-63e2b419d81f",
+                  "title": "msgpack: uso de memoria liberada y denegación de servicio",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "msgpack 1.1.2: dos vulnerabilidades altas al deserializar datos.\n- GHSA-6v7p-g79w-8964 (high, CVSS 7.5, EPSS  / ): Use After Free. Corregido en 1.2.1.\n- CVE-2026-57585 (high, CVSS 7.5, EPSS 0.488% / 40th percentile): sin título en el informe. Corregido en 1.2.1.",
+                  "mitigation": "Actualizar msgpack a >= 1.2.1. No deserializar datos de origen no confiable.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "privilegeLevel": "",
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "applicationType": "Web Application",
+              "storesCredentials": false,
+              "storesInventory": false
+            }
+          },
+          {
+            "position": {
+              "x": 360,
+              "y": 380
+            },
+            "size": {
+              "width": 180,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Runtime del contenedor (Alpine + herramientas Python)"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "c877460c-1355-44d9-a6dc-3d9008506fda"
+                },
+                {
+                  "group": "right",
+                  "id": "c703f1bc-7a1e-4ca8-a920-692d59822cca"
+                },
+                {
+                  "group": "bottom",
+                  "id": "adc3018e-5f26-494c-82be-a7f742ba49df"
+                },
+                {
+                  "group": "left",
+                  "id": "dbcacddd-2b6a-408c-9a7c-de1e92544b61"
+                }
+              ]
+            },
+            "id": "2d3d29c7-6137-436b-acbb-cd6d123a1ebc",
+            "data": {
+              "type": "tm.Process",
+              "name": "Runtime del contenedor (Alpine + herramientas Python)",
+              "description": "Sistema base Alpine y herramientas de build/instalación presentes en la imagen.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isTrustBoundary": false,
+              "threats": [
+                {
+                  "id": "cd8c1801-ad60-444e-91fc-16b7789c8867",
+                  "title": "setuptools: path traversal y manejo de Unicode",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "setuptools 70.3.0 (y 79.0.1 para el CVE de Unicode). Riesgo al instalar o construir paquetes en el contenedor.\n- CVE-2025-47273 (high, CVSS 7.7, EPSS 1.539% / 74th percentile): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'). Corregido en 78.1.1.\n- CVE-2026-59890 (medium, CVSS 6.1, EPSS 0.405% / 33rd percentile): Improper Handling of Unicode Encoding. Corregido en 83.0.0.",
+                  "mitigation": "Actualizar setuptools a >= 83.0.0 y retirar las herramientas de build de la imagen final (multi-stage build).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "b5a65166-9eeb-46a4-a0a6-2ba6c95be859",
+                  "title": "jaraco-context: Zip Slip al extraer tarballs (CVE-2026-23949)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "jaraco-context 5.3.0 (dependencia de setuptools).\n- CVE-2026-23949 (high, CVSS 8.6, EPSS 0.618% / 48th percentile): sin título en el informe. Corregido en 6.1.0.",
+                  "mitigation": "Actualizar jaraco-context a >= 6.1.0 o eliminar setuptools de la imagen final.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "fd4e8bbb-4273-42e1-804b-a3967e2ec97e",
+                  "title": "wheel: path traversal (CVE-2026-24049)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "wheel 0.45.1.\n- CVE-2026-24049 (high, CVSS 7.1, EPSS 0.355% / 27th percentile): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'). Corregido en 0.46.2.",
+                  "mitigation": "Actualizar wheel a >= 0.46.2 o excluirlo de la imagen final.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "05cfdba0-78d1-42fc-be37-bc73cd9f99e5",
+                  "title": "pip: path traversal, enlaces y ficheros peligrosos",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "pip 24.0 (6 CVEs medios/bajos).\n- CVE-2025-8869 (medium, CVSS 5.9, EPSS 0.469% / 39th percentile): Improper Link Resolution Before File Access ('Link Following'). Corregido en 25.3.\n- CVE-2026-13346 (medium, CVSS 5.6, EPSS 0.292% / 20th percentile): Absolute Path Traversal. Corregido en 26.2.0.\n- CVE-2026-6357 (medium, CVSS 5.3, EPSS 0.171% / 6th percentile): Inclusion of Functionality from Untrusted Control Sphere. Corregido en 26.1.\n- CVE-2026-3219 (medium, CVSS 4.6, EPSS 0.180% / 7th percentile): Unrestricted Upload of File with Dangerous Type. Corregido en 26.1.\n- CVE-2026-8643 (medium, CVSS 4.1, EPSS 0.466% / 38th percentile): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'). Corregido en 26.1.2.\n- CVE-2026-1703 (low, CVSS 2.0, EPSS 0.443% / 36th percentile): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'). Corregido en 26.0.",
+                  "mitigation": "Actualizar pip a >= 26.2.0 y no instalar paquetes desde fuentes no confiables.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "dcf2519b-68dd-4653-bda1-e7fa9492c880",
+                  "title": "zlib (Alpine): vulnerabilidad alta (CVE-2026-85091)",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "zlib 1.3.2-r0 en Alpine 3.24. El informe no da CVSS. EPSS 0.592% (percentil 47).\n- CVE-2026-85091 (high, sin CVSS, EPSS 0.592% / 47th percentile): sin título en el informe. Corregido en 1.3.2-r1.",
+                  "mitigation": "Reconstruir la imagen con zlib >= 1.3.2-r1 (apk upgrade o imagen base actualizada).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "privilegeLevel": "",
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "applicationType": "Generic",
+              "storesCredentials": false,
+              "storesInventory": false
+            }
+          },
+          {
+            "position": {
+              "x": 680,
+              "y": 270
+            },
+            "size": {
+              "width": 160,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Base de datos"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0e7b3338-4272-4fa2-a450-fd5fb429b97b"
+                },
+                {
+                  "group": "right",
+                  "id": "905f1a3f-88c2-46cb-832e-b4769cb7036e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02dbd03c-37c3-4b60-8856-8f404d27294f"
+                },
+                {
+                  "group": "left",
+                  "id": "10376648-95be-445d-ab2c-ec10c7ad9dce"
+                }
+              ]
+            },
+            "id": "9f49dcfc-f16c-4163-87bb-bf16316ac54a",
+            "data": {
+              "type": "tm.Store",
+              "name": "Base de datos",
+              "description": "Almacén de datos de la API. Supuesto añadido al generar el modelo.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isTrustBoundary": false,
+              "threats": [],
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "sourceMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Peticiones HTTP + JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": [
+                "b299e08e-545e-441e-bb01-cd9f786ad21e"
+              ]
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Peticiones HTTP + JWT"
+                  }
+                },
+                "position": 0.5
+              }
+            ],
+            "id": "5c387409-42b8-4756-b8cc-91e576d8bbd2",
+            "source": {
+              "cell": "a0704c8f-abe1-4df7-a8ff-327f438950e8"
+            },
+            "target": {
+              "cell": "91ec693a-e93d-4360-9122-8584196cee6d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "sourceMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "TCP",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Consultas"
+                  }
+                },
+                "position": 0.5
+              }
+            ],
+            "id": "fd055e18-fe55-4570-96b3-f0b5c29abdd7",
+            "source": {
+              "cell": "91ec693a-e93d-4360-9122-8584196cee6d"
+            },
+            "target": {
+              "cell": "9f49dcfc-f16c-4163-87bb-bf16316ac54a"
+            },
+            "vertices": []
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 16
+  }
+}
