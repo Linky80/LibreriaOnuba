@@ -1,8 +1,8 @@
 {
   "version": "2.6.2",
   "summary": {
-    "title": "libreriaonuba-api",
-    "owner": "José Angel Lara",
+    "title": "LibreriaOnuba-api STRIDE",
+    "owner": "José Angel Lara / Rafael Cordero ",
     "description": "Modelo de amenazas generado a partir del informe de Docker Scout de libreriaonuba-api:latest (1 crítica, 15 altas, 21 medias, 3 bajas).",
     "id": 0
   },
