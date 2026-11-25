@@ -70,3 +70,4 @@ Se aplica la fórmula simplificada de OWASP:
 | Alpine (zlib): vulnerabilidad en biblioteca base del sistema | 2 | 2 | **4 · Medio** | Requiere que el contenedor procese datos que activen el fallo; afecta la estabilidad del contenedor y sus procesos. |
 
 La tabla está ordenada de mayor a menor riesgo. La valoración parte de los 16 hallazgos descritos en `analisis-riesgos-asvs-l1-v2.md`.
+
