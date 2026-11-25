@@ -1,0 +1,195 @@
+[33mcommit 6c41bfdc075dac5612844a21a0e2a2fb1449d4ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mJosecdrFase1[m[33m, [m[1;31morigin/JosecdrFase1[m[33m)[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 21 18:14:22 2026 +0200
+
+    TablaSTRIDE.pdf
+
+ .DS_Store                                | Bin [31m14340[m -> [32m14340[m bytes
+ evidencias/.DS_Store                     | Bin [31m10244[m -> [32m12292[m bytes
+ evidencias/ud2/.~lock.TablaSTRIDE01.ods# |   1 [31m-[m
+ evidencias/ud2/TablaSTRIDE.pdf           | Bin [31m0[m -> [32m38618[m bytes
+ 4 files changed, 1 deletion(-)
+
+[33mcommit f3d329ffbc1b513c39301f547b19d5740c55512f[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 21 18:05:30 2026 +0200
+
+    TablaSTRIDE.ods
+
+ .DS_Store                                | Bin [31m10244[m -> [32m14340[m bytes
+ app/.DS_Store                            | Bin [31m6148[m -> [32m6148[m bytes
+ evidencias/.DS_Store                     | Bin [31m8196[m -> [32m10244[m bytes
+ evidencias/ud2/.~lock.TablaSTRIDE01.ods# |   1 [32m+[m
+ evidencias/ud2/TablaSTRIDE01.ods         | Bin [31m0[m -> [32m15588[m bytes
+ 5 files changed, 1 insertion(+)
+
+[33mcommit c65dc90fb8c3d4b6b2ae1cf44ca48aaa531c25e4[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 21 17:01:29 2026 +0200
+
+    Eliminado PDF obsoleto
+
+ evidencias/ud2/ModeloThreatDragon.pdf | Bin [31m62439[m -> [32m0[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 73823bebc0b2a2d239b220b102329529291189c9[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 21 17:00:50 2026 +0200
+
+    Subida PDF TreatDragon
+
+ evidencias/ud2/ModeloThreatDragon.pdf              | Bin [31m0[m -> [32m62439[m bytes
+ evidencias/ud2/libreriaonuba-api-threat-model.json |   4 [32m++[m[31m--[m
+ evidencias/ud2/libreriaonuba-api-threat-model.pdf  | Bin [31m0[m -> [32m62780[m bytes
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit d13bd1e7f639097c69ddca55589d251f2445fc53[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 21 16:32:29 2026 +0200
+
+    Archivo json de ThreatDragon
+
+ evidencias/.DS_Store                               | Bin [31m8196[m -> [32m8196[m bytes
+ evidencias/ud2/libreriaonuba-api-threat-model.json | 874 [32m+++++++++++++++++++++[m
+ 2 files changed, 874 insertions(+)
+
+[33mcommit 3484edd2da20ab24cb5f982db68a05aa2b8da18c[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 21 16:29:33 2026 +0200
+
+    Reubicació de capturas. Subida de captura de Threat Dragon
+
+ evidencias/.DS_Store                                  | Bin [31m8196[m -> [32m8196[m bytes
+ evidencias/{ud2 => ud1}/2026-10-06-ZAP-Report-.html   |   0
+ .../{ud2 => ud1}/2026-10-06-ZAP-Report-/.DS_Store     | Bin
+ .../2026-10-06-ZAP-Report-/normalize/LICENSE.md       |   0
+ .../2026-10-06-ZAP-Report-/normalize/normalize.css    |   0
+ .../2026-10-06-ZAP-Report-/themes/original/colors.css |   0
+ .../2026-10-06-ZAP-Report-/themes/original/main.css   |   0
+ .../{ud2 => ud1}/2026-10-06-ZAP-Report-/zap32x32.png  | Bin
+ .../Captura de pantalla 2026-09-30 a las 17.19.20.png | Bin
+ .../Captura de pantalla 2026-09-30 a las 17.36.24.png | Bin
+ .../Captura de pantalla 2026-09-30 a las 17.38.53.png | Bin
+ .../Captura de pantalla 2026-09-30 a las 17.43.09.png | Bin
+ .../Captura de pantalla 2026-10-01 a las 19.35.55.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.21.26.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.23.37.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.28.18.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.29.13.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.29.45.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.30.03.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.32.15.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.32.24.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.33.20.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.33.30.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.33.49.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.34.01.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.34.29.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.34.38.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.34.57.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.35.09.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.35.38.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.35.54.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.36.14.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.36.26.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.36.46.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.37.01.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.37.24.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.37.53.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.38.07.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.38.17.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.38.35.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.38.47.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.42.57.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.43.47.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.44.08.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.44.33.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.49.51.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.50.06.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 17.50.26.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 18.56.26.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 18.56.31.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 18.56.42.png | Bin
+ .../Captura de pantalla 2026-10-04 a las 18.56.57.png | Bin
+ .../Captura de pantalla 2026-10-06 a las 16.12.13.png | Bin
+ .../Captura de pantalla 2026-10-06 a las 16.33.50.png | Bin
+ .../Captura de pantalla 2026-10-06 a las 16.40.13.png | Bin
+ .../Captura de pantalla 2026-10-06 a las 16.40.25.png | Bin
+ .../Captura de pantalla 2026-10-06 a las 16.55.51.png | Bin
+ .../Captura de pantalla 2026-10-07 a las 16.05.22.png | Bin
+ .../Captura de pantalla 2026-10-07 a las 17.51.58.png | Bin
+ .../Captura de pantalla 2026-10-09 a las 18.43.14.png | Bin
+ evidencias/{ud2 => ud1}/getme-Linky80.png             | Bin
+ evidencias/ud2/Flujo principal de la API.png          | Bin [31m0[m -> [32m41773[m bytes
+ 62 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 639b6298d8f64042711877abffacd1317312bd88[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Tue Oct 13 17:42:32 2026 +0200
+
+    Informe-CVEs-DockerDesktop
+
+ .DS_Store                                          |  Bin [31m0[m -> [32m10244[m bytes
+ app/.vscode/settings.json                          |    3 [32m+[m
+ app/borrame.py                                     |    2 [32m+[m
+ docs/informe-cves.md                               | 2830 [32m++++++++++++++++++++[m
+ ...ptura de pantalla 2026-10-07 a las 17.51.58.png |  Bin [31m0[m -> [32m430743[m bytes
+ ...ptura de pantalla 2026-10-09 a las 18.43.14.png |  Bin [31m0[m -> [32m993081[m bytes
+ reporte.md                                         | 2830 [32m++++++++++++++++++++[m
+ 7 files changed, 5665 insertions(+)
+
+[33mcommit 3ba48d1132f951d271fe763b50c76192f85f0f92[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 7 16:06:08 2026 +0200
+
+    Captura GIT
+
+ .../Captura de pantalla 2026-10-07 a las 16.05.22.png | Bin [31m0[m -> [32m1063887[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 5e46eec4b97e76fa5026e1cb1506d66b6ca9a9e6[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 7 16:04:48 2026 +0200
+
+    Nuevas capturas, informes Bandit, Zap y pip-audit
+
+ app/.DS_Store                                      |  Bin [31m0[m -> [32m6148[m bytes
+ app/informe.json                                   |    1 [32m+[m
+ app/informePip-Audit.md                            |   38 [32m+[m
+ docs/.DS_Store                                     |  Bin [31m0[m -> [32m6148[m bytes
+ evidencias/ud2/.DS_Store                           |  Bin [31m0[m -> [32m6148[m bytes
+ evidencias/ud2/2026-10-06-ZAP-Report-.html         | 2801 [32m++++++++++++++++++++[m
+ evidencias/ud2/2026-10-06-ZAP-Report-/.DS_Store    |  Bin [31m0[m -> [32m6148[m bytes
+ .../2026-10-06-ZAP-Report-/normalize/LICENSE.md    |   21 [32m+[m
+ .../2026-10-06-ZAP-Report-/normalize/normalize.css |  349 [32m+++[m
+ .../themes/original/colors.css                     |  139 [32m+[m
+ .../themes/original/main.css                       |  417 [32m+++[m
+ evidencias/ud2/2026-10-06-ZAP-Report-/zap32x32.png |  Bin [31m0[m -> [32m1933[m bytes
+ ...ptura de pantalla 2026-09-30 a las 17.19.20.png |  Bin [31m0[m -> [32m253700[m bytes
+ ...ptura de pantalla 2026-09-30 a las 17.36.24.png |  Bin [31m0[m -> [32m316334[m bytes
+ ...ptura de pantalla 2026-09-30 a las 17.38.53.png |  Bin [31m0[m -> [32m138677[m bytes
+ ...ptura de pantalla 2026-09-30 a las 17.43.09.png |  Bin [31m0[m -> [32m392351[m bytes
+ ...ptura de pantalla 2026-10-01 a las 19.35.55.png |  Bin [31m0[m -> [32m879343[m bytes
+ ...ptura de pantalla 2026-10-04 a las 17.49.51.png |  Bin [31m0[m -> [32m308612[m bytes
+ ...ptura de pantalla 2026-10-04 a las 17.50.06.png |  Bin [31m0[m -> [32m507647[m bytes
+ ...ptura de pantalla 2026-10-04 a las 17.50.26.png |  Bin [31m0[m -> [32m498687[m bytes
+ ...ptura de pantalla 2026-10-04 a las 18.56.26.png |  Bin [31m0[m -> [32m8176[m bytes
+ ...ptura de pantalla 2026-10-04 a las 18.56.31.png |  Bin [31m0[m -> [32m456866[m bytes
+ ...ptura de pantalla 2026-10-04 a las 18.56.42.png |  Bin [31m0[m -> [32m459024[m bytes
+ ...ptura de pantalla 2026-10-04 a las 18.56.57.png |  Bin [31m0[m -> [32m439424[m bytes
+ ...ptura de pantalla 2026-10-06 a las 16.12.13.png |  Bin [31m0[m -> [32m365613[m bytes
+ ...ptura de pantalla 2026-10-06 a las 16.33.50.png |  Bin [31m0[m -> [32m1923012[m bytes
+ ...ptura de pantalla 2026-10-06 a las 16.40.13.png |  Bin [31m0[m -> [32m328656[m bytes
+ ...ptura de pantalla 2026-10-06 a las 16.40.25.png |  Bin [31m0[m -> [32m438617[m bytes
+ ...ptura de pantalla 2026-10-06 a las 16.55.51.png |  Bin [31m0[m -> [32m974335[m bytes
+ informe_bandit.html                                |  395 [32m+++[m
+ 30 files changed, 4161 insertions(+)
+
+[33mcommit 13a8d7ca8f49b5dfa29a5284634ede366ccd77df[m
+Author: Linky80 <jose.angel.lara@gmail.com>
+Date:   Wed Oct 7 16:04:25 2026 +0200
+
+    Nuevas capturas, informes Bandit, Zap y pip-audit
+
+ evidencias/.DS_Store | Bin [31m8196[m -> [32m8196[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
